@@ -9,7 +9,7 @@ const ShowNames = () => {
         .then(data => setData(data))
     },[])
     return (
-        <div className='row'>
+        <div className='row gap-3 my-5'>
             {
                 data?.map(show => <ShowName key={show.score} show={show} />)
             }
