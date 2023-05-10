@@ -7,6 +7,9 @@ const Booking = () => {
         const phoneNumber = event.target.phoneNumber.value;
         const email = event.target.email.value;
         const address = event.target.address.value;
+        const user = {name: name, phoneNumber: phoneNumber, email: email, address: address };
+
+        localStorage.setItem('userData', JSON.stringify(user));
 
         console.log(name, phoneNumber, email, address)
     }
